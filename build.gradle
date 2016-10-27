@@ -24,5 +24,8 @@ dependencies {
 }
 
 task stage (
-	dependsOn: installDist
+	dependsOn: ['installDist', 'build', 'clean']
 )
+
+build.mustRunAfter clean
+installDist.mustRunAfter build
