@@ -5,3 +5,5 @@ script:
     
 jdk:
     - oraclejdk8
+    
+sudo: required
