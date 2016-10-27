@@ -2,7 +2,9 @@ language: java
 
 script:
     - ./gradlew check
-    - ./gradlew assemble
+    
+before_install:
+ - chmod +x gradlew
     
 jdk:
     - oraclejdk8
