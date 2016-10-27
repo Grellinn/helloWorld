@@ -6,8 +6,6 @@ script:
 jdk:
     - oraclejdk8
     
-sudo: required
-
 deploy:
   provider: heroku
   api_key:
